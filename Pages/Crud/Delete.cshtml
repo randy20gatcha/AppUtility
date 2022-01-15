@@ -1,0 +1,13 @@
+﻿@page "{id}"
+@model AppUtility.Pages.Crud.DeleteModel
+@{
+}
+<h3>Delete Confirmation</h3>
+
+<div class="alert alert-danger">
+    <h5>Are you sure you want to Delete employee - @Model.Employee.FirstName</h5>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a class="btn btn-primary" asp-page="/Index">No</a>
+    </form>
+</div>

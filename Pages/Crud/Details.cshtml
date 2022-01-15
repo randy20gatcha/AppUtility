@@ -1,0 +1,15 @@
+﻿@page "/Crud/Details/{id}"
+@model AppUtility.Pages.Crud.DetailsModel
+@{
+}
+<h3>Details</h3>
+
+<div class="row justify-content-center ">
+    <div class="card-body">
+        <h5>First Name: @Model.Employee.FirstName</h5>
+        <h5>Last Name: @Model.Employee.LastName</h5>
+        <h5>Email Address: @Model.Employee.EmailAddress</h5>
+        <a asp-page="/Index" class="btn btn-success small">Back to List</a>
+    </div>
+
+</div>
